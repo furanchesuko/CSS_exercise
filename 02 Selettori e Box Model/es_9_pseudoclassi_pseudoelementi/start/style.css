@@ -1,0 +1,49 @@
+/* - Applica alla prima lettera del primo paragrafo il seguente stile:
+
+```css
+{
+	float: left;
+	color: darkred;
+	border: 3px ridge darkgoldenrod;
+	padding: 16px;
+	background-color: gold;
+	margin: 8px;
+}
+```*/
+blockquote {
+	background-color: rgba(0, 0, 0, .12);
+	padding: 8px;
+}
+
+/* - Aggiungi al `blockquote` delle virgolette prima e dopo il testo; */
+blockquote::before {
+	content: '"';
+}
+
+blockquote::after {
+	content: '"';
+}
+
+a {
+	color: darkred;
+	text-decoration: none;
+}
+
+/* - Il link in fondo, deve cambiare colore al passaggio del mouse su di esso. 
+ Deve anche avere un colore diverso se è già stato visitato */
+a:hover {
+	color: green;
+}
+
+a:visited {
+	color: purple;
+}
+
+h1 + p::first-letter {
+	float: left;
+	color: darkred;
+	border: 3px ridge darkgoldenrod;
+	padding: 16px;
+	background-color: gold;
+	margin: 8px;
+}

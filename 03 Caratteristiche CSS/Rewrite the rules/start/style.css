@@ -1,0 +1,25 @@
+/* Riscrivi le regole utilizzando custom properties.
+**Suggestion**:
+
+Usa il selettore :root, definendo lì tutte le proprietà 
+e utilizzandole nei selettori body e .ball */
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+.ball {
+    width: var(--main-width);
+    height: var(--main-height);
+    border-radius: var(--main-border-radius);
+    background-color: var(--second-bg-color);
+}
+/* definiamo le custom properties all'interno di :root 
+e le richiamiamo all'interno dei selettori */
+:root {
+    --main-bg-color: #011212;
+    --main-width: 100px;
+    --main-height: 100px;
+    --second-bg-color: #ff8800;
+    --main-border-radius: 50px;
+}
