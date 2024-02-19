@@ -1,0 +1,25 @@
+/* Replica il layout, utilizzando la proprietà CSS Flexbox, 
+presente nell'immagine asset/layout1.png nel file zip */
+
+body {
+    display: flex;
+    flex-wrap:wrap;
+    overflow:hidden;
+}
+#yellow{
+    order:1;
+}
+#red{
+    order:2;
+}
+#green {
+    order: 3;
+}
+
+#orange{
+    order:4;
+    flex:1 20%;
+}
+#blue{
+    order:5;
+}

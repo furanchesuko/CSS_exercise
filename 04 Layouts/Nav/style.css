@@ -14,7 +14,7 @@ body {
     padding: 0px;
 }
 
-nav {
+ul {
     color: white;
     display: inline-block;
     background-color: #212529;
@@ -24,6 +24,11 @@ nav {
     word-spacing: 8px;
     padding-left: 10px;
     padding-top: 8px;
+    margin:0px;
+}
+
+li {
+    display: inline;
 }
 
 strong {
@@ -41,23 +46,8 @@ strong {
     color: rgba(255, 255, 255, 0.57);
     background-color: transparent;
     border: 0px transparent;
-  /*   appearance: none; */
 }
 
-/* .dropdown::after {
-    content: "\25b6";
-}
-
-.dropdown {
-    position: relative
-}
-
-.dropdown::after {
-    position: absolute;
-    top: 0;
-    right: 0
-}
- */
 .disabled {
     font-size: 15px;
     background-color: transparent;
@@ -101,13 +91,13 @@ strong {
 }
 
 span:hover {
-    background-color: rgba(0, 0, 0, 0.327);
+    color: #198C56;
 }
 
 .link:hover {
-    background-color: rgba(0, 0, 0, 0.327);
+    color: #198C56;
 }
 
 select:hover {
-    background-color: rgba(0, 0, 0, 0.327);
+    color: #198C56;
 }
