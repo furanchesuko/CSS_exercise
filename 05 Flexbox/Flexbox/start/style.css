@@ -11,28 +11,35 @@ assegna la proprietà `flex: 1` alla lista dei collegamenti. */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: large;
+    font-weight: 1000;
+    background-color: #214352;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
     display: flex;
-    flex-direction: row;
 }
 
 /* La barra laterale dovrebbe avere una larghezza di 200px e 
 dovrebbe occupare l'intera altezza della pagina.  */
 .sidebar {
-    width: 200px;
-    height: 100%;
-    background-color: rgb(254, 230, 193);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(235, 244, 255);
     margin: 0px;
     padding: 0px;
-    position: flex;
+    width: 200px;
+    height: 100vh;
 }
 
 .logo {
     margin: 0px;
     padding: 10px;
+    width: 30px;
 }
 
 .sidebar a {
-    display: block;
     padding: 16px;
     text-decoration: none;
     color: #2b2b2b;
@@ -47,5 +54,19 @@ dovrebbe occupare l'intera altezza della pagina.  */
 
 .userData {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15em;
 }
+
+.userData>img {
+    border-radius:50%;
+    width: 50px;
+}
+
+/* article {
+    padding: 10px;
+    margin: 10px;
+} */
