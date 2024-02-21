@@ -1,0 +1,41 @@
+/* Cerca di replicare il layout nell'immagine asset/layout4.png
+ utilizzando le proprietà CSS Grid. I blocchi verdi e arancioni 
+ sono alti la metà dei blocchi gialli e rossi.
+ */
+
+/* do display griglia e indico colonne pagina */
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+/* do display griglia e indico colonne delle unordered list all'interno dei blocchi */
+ul{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+/* per ogni blocco posiziono in column o row da impostare*/
+#green {
+    grid-column: 1/4;
+    grid-row: 1;
+    
+}
+
+#yellow {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#red {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#orange {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+#blue {
+    grid-column: 3;
+    grid-row: 2/4;
+}
