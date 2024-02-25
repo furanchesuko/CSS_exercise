@@ -1,6 +1,11 @@
 /* Rendi la navbar creata nell'esercizio Nav della lezione Introduzione ai layouts responsiva: 
 sotto i 768 pixel, la barra di navigazione viene sostituita da un menu hamburger senza funzionalità,
  che appare solamente. Prova a creare il menu hamburger sia con regole CSS che utilizzando un'icona. */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -44,7 +49,7 @@ strong {
     color: rgba(255, 255, 255, 0.57);
     background-color: transparent;
     border: 0px transparent;
-    padding:0px;
+    padding: 0px;
 }
 
 .disabled {
@@ -102,6 +107,7 @@ select:hover {
 }
 
 .hamburger-menu {
+    display: none;
     float: left;
     z-index: 2;
     position: relative;
@@ -128,6 +134,7 @@ select:hover {
         z-index: 1;
         display: flex;
         flex-direction: column;
+        flex-basis: 200px;
         width: 15em;
         height: 20em;
         padding-top: 50px;
@@ -141,7 +148,9 @@ select:hover {
 
     .hamburger-menu {
         display: flex;
+        position: fixed;
         background-color: rgba(255, 255, 255, 0.168);
         border-radius: 5px;
+        margin: 10px;
     }
 }
